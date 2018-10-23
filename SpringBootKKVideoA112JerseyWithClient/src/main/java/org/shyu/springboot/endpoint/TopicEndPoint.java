@@ -55,7 +55,9 @@ public class TopicEndPoint {
 		} else {
 			logger.info("Record created!");
 		}
+		//return Response.created(URI.create("/topics/create")).entity(topic).build();
 		return Response.created(URI.create("/topics/create")).build();
+		//return Response.ok(topic).build();
 	}
 	
 	@GET
